@@ -2,7 +2,7 @@
 import { navberData } from "@/components/data/NavberData";
 import BriefcaseModal from "@/components/modal/BriefcaseModal";
 import SearchModal from "@/components/modal/SearchModal";
-import { handleOutSideClickEvent } from "@/components/outsideClick/OutsideClick";
+// import { handleOutSideClickEvent } from "@/components/outsideClick/OutsideClick";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { BiSearch } from "react-icons/bi";
@@ -29,10 +29,10 @@ const BottomHeader = () => {
   const [briefcase, setBriefcase] = useState(false);
 
   const searchModalRef = useRef(null);
-  handleOutSideClickEvent(searchModalRef, setOpenSearchbar);
+  // handleOutSideClickEvent(searchModalRef, setOpenSearchbar);
 
   const briefcaseModalRef = useRef(null);
-  handleOutSideClickEvent(briefcaseModalRef, setBriefcase);
+  // handleOutSideClickEvent(briefcaseModalRef, setBriefcase);
 
 
 //   modalOpen
